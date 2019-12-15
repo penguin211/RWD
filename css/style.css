@@ -1,0 +1,1329 @@
+@media screen and (max-width: 320px) {
+    html{
+        max-width: 320px;
+        background-color: #ffffff;
+        box-sizing: border-box;
+    }
+    
+    *,*:before, *:after{
+        box-sizing: inherit;
+    }
+    
+    body{
+        max-width: 320px;
+        margin: 0;
+    }
+    
+    .banner, .div_buy, .LM{
+        display: none;
+    }
+    
+    .L{
+        display: none;
+    }
+    
+    .M{
+        display: none;
+    }
+    
+    /**header**/
+    .header{
+        display: flex;
+        max-width: 320px;
+        margin-bottom: 0px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #707070;
+    }
+    
+    .icon_S{
+        display: flex;
+        width: 320px;
+        padding: 0px;
+        margin-top: 20px;
+    }
+    
+    /**menu**/
+    .ham {
+        border-radius: 5px;
+        background: rgba(0,0,0,.3);
+        display: block;
+        position: relative;
+      }
+    
+      .menu_img{
+        width: 51px;
+        height: 56px;
+        position: absolute;
+        top:0px;
+        left: 12px;
+        z-index: 100;
+    }
+    
+    #nav-toggle {
+        display: none;
+    }
+      
+    #nav-toggle:checked ~ .ham .ham-bar--middle {
+        opacity: 0;
+    }
+      
+    #nav-toggle:checked ~ .ham .ham-bar--top {
+        transform: rotate(-45deg);
+    }
+      
+    #nav-toggle:checked ~ .ham .ham-bar--bottom {
+        transform: rotate(45deg);
+    }
+    
+    .menu {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        padding: 30px;
+        background: #f1f4f8;
+        /* 用 translate 把選單藏到畫面右邊去 */
+        transform: translateX(-100%);
+        transition: transform .5s;
+        z-index: 80;
+    }
+    
+    #nav-toggle:checked ~ .menu {
+        transform: none;
+      }
+      
+      .menu-list {
+        list-style: none;
+        margin: 0;
+        margin-top: 70px;
+        padding: 0;
+      }
+      
+      .menu-item + .menu-item {
+        margin-top: 20px;
+      }
+      
+      .menu-link {
+        font-family: Microsoft Yahei;
+        font-size: 15px;
+        color: #707070;
+        letter-spacing: 2px;
+        text-decoration: none;
+      }
+    
+      .menu-link:hover{
+        text-decoration: none;
+        color: #8d8d8d;
+    }
+    
+    .ham {
+        border-radius: 5px;
+        background: rgba(0,0,0,.3);
+        display: block;
+        position: relative;
+    }
+    
+    .menu_img2{
+        width: 51px;
+        height: 56px;
+        position: absolute;
+        margin-left: 40px;
+        z-index: 100;
+    }
+    
+    #nav-toggle2 {
+        display: none;
+    }
+    
+    .menu2{
+        position: fixed;
+        top: 0;
+        left: 236px;
+        bottom: 0;
+        padding: 30px;
+        background: #f1f4f8;
+        /* 用 translate 把選單藏到畫面右邊去 */
+        transform: translateX(100%);
+        transition: transform .5s;
+        z-index: 80;
+    }
+    
+    #nav-toggle2:checked ~ .menu2 {
+        transform: none;
+    }
+    
+    .menu_list2 {
+        list-style: none;
+        margin: 0;
+        margin-top: 70px;
+        padding: 0;
+    }
+    
+    .i_list_item + .i_list_item {
+        margin-top: 20px;
+    }
+    
+    .i_link {
+        font-family: Microsoft Yahei;
+        font-size: 15px;
+        color: #707070;
+        letter-spacing: 2px;
+    }
+    
+    /**logo**/
+    .logo{
+        width: 114px;
+        height: 56px;
+        justify-content: center;
+        margin-left: 103px;
+    }
+    
+    /**article**/
+    .article{
+        position: relative;
+    }
+    
+    /**new**/
+    .new_p{
+        display: flex;
+        margin: 30px 0 10px 34px;
+    }
+    
+    .p{
+        font-family: Microsoft Yahei;
+        font-size: 25px;
+        letter-spacing: 6px;
+        color: #707070;
+        margin: 0;
+    }
+    
+    .b_phone{
+        display: flex;
+        width: 320px;   
+    }
+    
+    .new_img{
+        display: flex;
+        width: 272px;
+        height: auto;
+        position: relative;
+        margin: 0;
+        margin-left: 24px;
+        box-shadow: 0 4px 3px rgba(0, 0, 0, 16%);
+    }
+    
+    .div_b{
+        width: 272px;
+        height: 90px;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.4);
+        margin: 0;
+        margin-top: 182px;
+        margin-left: 24px;
+    }
+    
+    .b{
+        text-align: center;
+        font-family: Microsoft Yahei;
+        font-size: 16px;
+        letter-spacing: 5px;
+        line-height: 25px;
+        color: #ffffff;
+        text-shadow: 0 1px 1px #000000;
+        margin: 0;
+    }
+    
+    .b_p{
+        text-align: center;
+        font-family: Microsoft Yahei;
+        font-size: 14px;
+        letter-spacing: 4px;
+        line-height: 25px;
+        color: #ffffff;
+        text-shadow: 0 1px 1px #000000;
+        margin: 0;
+    }
+    
+    .n_other{
+        display: flex;
+        margin: 0;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    
+    .n_left{
+        width: 10px;
+        height: 35px;
+        margin: 0;
+        margin-top: 20px;
+        margin-right: 1px;
+    }
+    
+    .n_right{
+        width: 10px;
+        height: 35px;
+        margin: 0;
+        margin-top: 20px;
+        margin-left: 1px;
+    }
+    
+    .n_img{
+        width: 76px;
+        height: auto;
+        margin: 0 5px;
+    }
+    
+    /**best**/
+    .best_p{
+        display: flex;
+        margin: 50px 0 7px 34px;
+    }
+    
+    .best_iS{
+        width: 320px;
+        margin: 0;
+    }
+    
+    .best_a{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .best_img{
+        width: 320px;
+        height: auto;
+        margin: 3px 0;
+    }
+    
+    /**footer**/
+    .footer_s1{
+        height: 440px;
+        background-color: #b9cade;
+    }
+    
+    .footer_l{
+        padding: 0;
+        padding-top: 15px;
+        margin: 0 0 40px 90px;
+    }
+    
+    .footer_date, .footer_buy{
+        display: flex;
+        margin: 0;
+    }
+    
+    .footer_custom{
+        display: flex;
+        margin: 0;
+        margin-top: 10px;
+    }
+    
+    .f_c{
+        font-family: Microsoft Yahei;
+        font-size: 13px;
+        letter-spacing: 3px;
+        color: #ffffff;
+        text-decoration: none;
+        margin: 0;
+        margin-left: 15px;
+    }
+    
+    .footer_date_p, .footer_buy_p{
+        margin: 0;
+        margin-top: 13px;
+    }
+    
+    .footer_custom_p{
+        margin: 0;
+        margin-top: 6px;
+    }
+    
+    .footer_contect{
+        margin: 0;
+        margin-left: 10px;
+    }
+    
+    .contect{
+        font-family: Microsoft Yahei;
+        font-size: 16px;
+        letter-spacing: 5px;
+        color: #ffffff;
+        margin: 0;
+        margin-left: 110px;
+    }
+    
+    .contect-list{
+        padding: 0;
+        padding-top: 15px;
+        margin: 0;
+        margin-left: 60px;
+    }
+    
+    .c_phone{
+        display: flex;
+        margin: 0;
+        margin-left: 15px;
+    }
+    
+    .c_mail{
+        display: flex;
+        margin: 0;
+        margin-left: 10px;
+    } 
+    
+    .c_line{
+        display: flex;
+        margin: 0;
+    }
+    
+    .c_img{
+        margin: 0;
+        margin-right: 15px;
+    }
+    
+    .c_c{
+        font-family: Microsoft Yahei;
+        font-size: 13px;
+        letter-spacing: 1px;
+        color: #ffffff;
+        text-decoration: none;
+        margin: 0;
+        margin-top: -5px;
+    }
+    
+    .contect-phone{
+        margin-left: -5px;
+    }
+    
+    .media_icon{
+        display: flex;
+        margin: 0;
+        margin-top: 20px;
+        margin-left: 62px;
+    }
+    
+    .icon_img{
+        margin: 0 10px;
+    }
+    
+    .footer_s2{
+        position: relative;
+        height: 110px;
+        background-color: #7091b9;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .footer_s2_p{
+        font-family: Microsoft Yahei;
+        font-size: 10px;
+        letter-spacing: 5px;
+        color: #ffffff;
+        margin: 0;
+        margin-left: 30px;
+        padding: 0;
+        padding-top: 25px;
+    }
+    
+    .top{
+        width: 80px;
+        position: absolute;
+        margin: 0;
+        margin-left: 110px;
+        margin-top: 40px;
+        z-index: 1;
+    }
+    
+    .footer_s3{
+        position: relative;
+        height: 50px;
+        background-color: #47607a;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html{
+        max-width: 768px;
+        background-color: #ffffff;
+        box-sizing: border-box;
+    }
+    
+    *,*:before, *:after{
+        box-sizing: inherit;
+    }
+    
+    body{
+        max-width: 768px;
+        margin: 0;
+    }
+    
+    .b_list_i, .best_i, .best_iS, .b_imgs{
+        display: none;
+    }
+    
+    .L{
+        display: none;
+    }
+    
+    .S{
+        display: none;
+    }
+    
+    /**header**/
+    .header{
+        display: flex;
+        align-items: center;
+        max-width: 768px;
+        margin-bottom: 0px;
+    }
+    
+    /**logo**/
+    .logo{
+        display: flex;
+        width: 140px;
+        height: 69px;
+        margin-top: 38px;
+        margin-left: 80px;
+        margin-right: 180px;
+    }
+    
+    /**icon**/
+    .icon_M{
+        display: flex;
+        width: 288px;
+        justify-content: flex-end;
+        padding: 0px;
+        margin-top: 80px;
+        margin-right: 80px;
+        z-index: 1;
+    }
+    
+    .ic_wlM{
+        width: 24px;
+        height: 37px;
+        padding: 0px;
+        margin-top: 2px;
+        margin-right: 4px;
+    }
+    
+    .ic_lM{
+        margin-top: 9px;
+    }
+    
+    .language_M{
+        width: 56px;
+        font-family: Microsoft Yahei;
+        font-size: 14px;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .ic_ldM{
+        margin: 5px 20px 0 5px;
+    }
+    
+    .ic_mM{
+        margin: 2px 7px 0 5px;
+    }
+    
+    .ic_eM, .ic_bM, .ic_sM{
+        margin: 0 7px;
+    }
+    
+    /**banner**/
+    .banner{
+        width: 768px;
+        height: 58px;
+        margin-top: 37px;
+        border-bottom: 1px solid #707070;
+    }
+    
+    .list{
+        margin-left: 80px;
+        padding-bottom: 30px;
+    }
+    
+    .b_list{
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .b_list_item{
+        list-style: none;
+        width: 114px;
+        height: 27px;
+        margin-left: 14px;
+    }
+    
+    .item{
+        font-family: Microsoft Yahei;
+        font-size: 16px;
+        color: #707070;
+        letter-spacing: 6px;
+        text-decoration: none;
+    }
+    
+    /**article**/
+    
+    /**new**/
+    .a_newM{
+        margin-bottom: 0;
+    }
+    
+    .div_new{
+        line-height: 60px;
+        text-align: center;
+        justify-content: center;
+        padding: 0;
+        margin-top: 45px;
+        margin-left: -5px;
+        margin-bottom: 20px;
+    }
+    
+    .new_line{
+        justify-content: center;
+    }
+    
+    .line{
+        display: inline-block;
+        position: relative;
+        width: 608px;
+        border-top: 1px solid #707070;
+    }
+    
+    .new_div{
+        display: flex;
+        position: absolute;
+        width: 172px;
+        justify-content: center;
+        background-color: #ffffff;
+        padding: 0;
+        margin: 0;
+        margin-top: -55px;
+        margin-left: 298px
+    }
+    
+    .new_p{
+        font-family: Microsoft Yahei;
+        font-size: 25px;
+        letter-spacing: 6px;
+        color: #707070;
+        margin: 0;
+    }
+    
+    /**new-img**/
+    .new{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .b_left{
+        width: 10px;
+        height: 35px;
+        margin-top: 60px;
+    }
+    
+    .new_s{
+        width: 200px;
+        margin-right: 20px;
+    }
+    
+    .new_l{
+        margin: 0;
+        margin-left: 18px
+    }
+    
+    .div_b{
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .b{
+        font-family: Microsoft Yahei;
+        font-size: 14px;
+        letter-spacing: 3px;
+        color: #707070;
+    }
+    
+    .b_p{
+        font-family: Microsoft Yahei;
+        font-size: 12px;
+        letter-spacing: 3px;
+        color: #707070;
+    }
+    
+    .b_right{
+        width: 10px;
+        height: 35px;
+        margin-top: 60px;
+        margin-left: -20px;
+    }
+    
+    /**best**/
+    .best{
+        width: 768px;
+        height: 482px;
+        background-color: #f1f4f8;
+        margin-bottom: 0;
+    }
+    
+    .div_best{
+        line-height: 60px;
+        text-align: center;
+        justify-content: center;
+        padding: 0;
+        margin-top: 32px;
+        margin-left: -5px;
+        margin-bottom: 20px;
+    }
+    
+    .best_line{
+        justify-content: center;
+    }
+    
+    .best_p{
+        display: flex;
+        position: absolute;
+        width: 172px;
+        justify-content: center;
+        background-color: #f1f4f8;
+        padding: 0;
+        margin: 0;
+        margin-top: -55px;
+        margin-left: 298px
+    }
+    
+    .p{
+        font-family: Microsoft Yahei;
+        font-size: 25px;
+        letter-spacing: 6px;
+        color: #707070;
+        margin: 0;
+    }
+    
+    /**best-img**/
+    .best_iM{
+        padding: 0;
+        margin: 0;
+        margin-left: 80px;
+    }
+    
+    .best_img{
+        padding-right: 60px;
+        padding-bottom: 30px;
+    }
+    
+    /**aside**/
+    .aside{
+        width: 768px;
+        height: 364px;
+        background-color: #b9cade;
+    }
+    
+    .div_buy{
+        width: 768px;
+        line-height: 60px;
+        text-align: center;
+        justify-content: center;
+        padding: 0;
+        margin-left: -5px;
+        margin-bottom: 20px;
+    }
+    
+    .buy_line{
+        justify-content: center;
+    }
+    
+    .b_line{
+        display: inline-block;
+        position: relative;
+        width: 608px;
+        border-top: 1px solid #ffffff;
+        margin-top: 64px;
+    }
+    
+    .buy_p{
+        display: flex;
+        position: absolute;
+        width: 172px;
+        justify-content: center;
+        background-color: #b9cade;
+        padding: 0;
+        margin: 0;
+        margin-top: -55px;
+        margin-left: 298px
+    }
+    
+    .buy{
+        font-family: Microsoft Yahei;
+        font-size: 25px;
+        letter-spacing: 6px;
+        color: #ffffff;
+        margin: 0;
+    }
+    
+    /**aside-img**/
+    .div_imgM{
+        display: flex;
+        margin-top: 50px;
+        margin-left: 55px
+    }
+    
+    .b_item{
+        text-align: center;
+        position: relative;
+        margin: 0;
+        margin-right: 42px;
+    }
+    
+    .b_item_p{
+        font-family: Microsoft Yahei;
+        font-size: 20px;
+        letter-spacing: 4px;
+        color: #ffffff;
+        margin: 0;
+        margin-top: 24px;
+    }
+    
+    /**footer**/
+    .footer{
+        width: 768px;
+        height: 220px;
+    }
+    
+    .footer_s1{
+        display: flex;
+        height: 180px;
+        background-color: #7091b9;
+    }
+    
+    .footer_date, .footer_custom{
+        display: flex;
+        margin-left: 80px;
+    }
+    
+    .footer_date_img{
+        width: 24px;
+        height: 39px;
+        margin-top: 45px;
+        margin-right: 8px;
+    }
+    
+    .f_c{
+        font-family: Microsoft Yahei, Arial;
+        font-size: 12px;
+        letter-spacing: 3px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+    
+    .footer_date_p{
+        margin-top: 55px;
+        margin-right: 28px;
+    }
+    
+    .footer_custom_img{
+        width: 20px;
+        height: 39px;
+        margin-top: 22px;
+        margin-right: 10px;
+    }
+    
+    .footer_custom_p{
+        margin-top: 25px;
+        margin-right: 28px;
+    }
+    
+    .footer_contect{
+        height: 130px;
+        border-left: 1px solid #ffffff;
+        padding-left: 30px;
+        margin-top: 32px;
+        margin-right: 54px;
+    }
+    
+    .footer_follow{
+        height: 130px;
+        margin-top: 32px;
+        margin-right: 70px;
+    }
+    
+    .contect, .follow{
+        font-family: Microsoft Yahei, Arial;
+        font-size: 16px;
+        letter-spacing: 8px;
+        color: #ffffff;
+        margin: 0;
+        margin-top: 2px;
+    }
+    
+    .contect-list{
+        font-family: Microsoft Yahei, Arial;
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 22px;
+        color: #ffffff;
+        margin: 0;
+        margin-top: 2px;
+    }
+    
+    .follow-item{
+        font-family: Microsoft Yahei, Arial;
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 22px;
+        color: #ffffff;
+        text-decoration: none;
+        margin-top: 2px;
+    }
+    
+    .top{
+        width: 81px;
+        height: 68px;
+        margin-top: 80px;
+    }
+    
+    .footer_s2{
+        display: flex;
+        height: 40px;
+        align-items: center;
+        justify-content: center;
+        background-color: #47607a;
+    }
+    
+    .footer_s2_p{
+        font-family: Microsoft Yahei;
+        font-size: 10px;
+        letter-spacing: 4px;
+        color: #ffffff;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    html{
+        max-width: 1280px;
+        background-color: #ffffff;
+        box-sizing: border-box;
+        margin-left: 120px;
+    }
+    
+    *,*:before, *:after{
+        box-sizing: inherit;
+    }
+    
+    body{
+        max-width: 1280px;
+        margin: 0;
+    }
+    
+    .best_iM, .best_iS, .div_imgM{
+        display: none;
+    }
+    
+    .M{
+        display: none;
+    }
+    
+    .S{
+        display: none;
+    }
+    
+    /**header**/
+    .header{
+        max-width: 1280px;
+        margin-bottom: 0px;
+    }
+    
+    .icon_L{
+        display: flex;
+        justify-content: flex-end;
+        padding: 0px;
+        margin-top: 10px;
+    }
+    
+    .ic_wlL{
+        width: 18px;
+        height: 27px;
+        padding: 0px;
+        margin-top: 2px;
+        margin-right: 5px;
+    }
+    
+    .ic_lL{
+        margin-top: 5px;
+    }
+    
+    .language{
+        font-family: Microsoft Yahei;
+        font-size: 13px;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .ic_ldL{
+        margin: 5px 5px 0 2px;
+    }
+    
+    .ic_mL{
+        margin: 2px 5px 0 5px;
+    }
+    
+    .ic_eL, .ic_bL{
+        margin: 0 5px;
+    }
+    
+    /**logo**/
+    .logo{
+        display: flex;
+        justify-content: center;
+        margin-top: 52px;
+    }
+    
+    /**banner**/
+    .banner{
+        margin-top: 45px;
+    }
+    
+    .list{
+        margin-left: 260px;
+        margin-bottom: 7px;
+    }
+    
+    .b_list{
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .b_list_item{
+        list-style: none;
+        width: 114px;
+        height: 27px;
+        margin-left: 14px;
+    }
+    
+    .item{
+        font-family: Microsoft Yahei;
+        font-size: 18px;
+        color: #707070;
+        letter-spacing: 6px;
+        text-decoration: none;
+    }
+    
+    .b_list_i{
+        display: flex;
+        width: 205px;
+        height: 18px;
+    }
+    
+    .b_list_search{
+        width: 205px;
+        height: 18px;
+        border: 1px solid #707070;
+        border-radius: 10px;
+        margin-top: 2px;
+        margin-left: 16px;
+        position: relative;
+    }
+    
+    .search{
+        margin: 3.8px 0 0 25px;
+        position: absolute;
+    }
+    
+    /**article**/
+    
+    /**new**/
+    .a_newL{
+        display: flex;
+        width: 1280px;
+        height: 310px;
+    }
+    
+    .new_p{
+        font-family: Microsoft Yahei;
+        font-size: 25px;
+        letter-spacing: 6px;
+        color: #707070;
+        margin-left: 140px;
+        margin-bottom: 0px;
+    }
+    
+    .new_l{
+        margin: 0;
+    }
+    
+    .b_phone{
+        width: 243px;
+        height: 162px;
+        background-color: #f1f4f8;
+        margin-left: 80px;
+    }
+    
+    .phone{
+        font-family: Microsoft Yahei;
+        font-size: 16px;
+        letter-spacing: 4px;
+        color: #555964;
+        padding-top: 10px;
+        margin-left: 6px;
+        margin-bottom: 0px;
+    }
+    
+    .phone_p{
+        font-family: Microsoft Yahei;
+        font-size: 14px;
+        letter-spacing: 4px;
+        color: #555964;
+        margin-top: 15px;
+        margin-left: 6px;
+        margin-bottom: 0px;
+    }
+    
+    .new_img{
+        width: 807px;
+        height: 173px;
+        margin-top: 100px;
+        margin-left: -948px;
+    }
+    
+    .new_imgr{
+        width: 10px;
+        height: 35px;
+        margin-top: 169px;
+        margin-left: 25px;
+    }
+    
+    /**best**/
+    .best{
+        width: 1280px;
+        height: 750px;
+        background-color: #f1f4f8;
+        margin-bottom: 0;
+    }
+    
+    .div_best{
+        line-height: 60px;
+        text-align: center;
+        justify-content: center;
+        padding-top: 10px;
+        margin-left: -5px;
+        margin-bottom: 20px;
+    }
+    
+    .best_line{
+        justify-content: center;
+    }
+    
+    .line{
+        display: inline-block;
+        position: relative;
+        width: 740px;
+        border-top: 1px solid #707070;
+    }
+    
+    .p{
+        width: 188px;
+        font-family: Microsoft Yahei;
+        position: absolute;
+        font-size: 25px;
+        letter-spacing: 6px;
+        color: #707070;
+        background-color: #f1f4f8;
+        padding-top: 0px;
+        margin: 0;
+        margin-top: -57px;
+        margin-left: 558px;
+    }
+    
+    .best_i{
+        margin-left: 188px;
+    }
+    
+    .best_img{
+        padding-right: 6px;
+        padding-bottom: 55px;
+    }
+    
+    /**aside**/
+    .aside{
+        width: 1280px;
+        height: 430px;
+        background-color: #b9cade;
+    }
+    
+    .div_buy{
+        line-height: 60px;
+        text-align: center;
+        justify-content: center;
+        padding-top: 40px;
+        margin-left: -5px;
+        margin-bottom: 20px;
+    }
+    
+    .buy_line{
+        justify-content: center;
+    }
+    
+    .b_line{
+        display: inline-block;
+        position: relative;
+        width: 740px;
+        border-top: 1px solid #ffffff;
+    }
+    
+    .buy{
+        width: 188px;
+        font-family: Microsoft Yahei;
+        position: absolute;
+        font-size: 25px;
+        letter-spacing: 6px;
+        color: #ffffff;
+        background-color: #b9cade;
+        padding-top: 0px;
+        margin: 0;
+        margin-top: -57px;
+        margin-left: 558px;
+    }
+    
+    .b_imgs{
+        display: flex;
+        margin: 50px 0 0 100px;
+    }
+    
+    .b_item{
+        text-align: center;
+        position: relative;
+        margin: 0 50px;
+    }
+    
+    .b_item_p{
+        font-family: Microsoft Yahei;
+        font-size: 20px;
+        letter-spacing: 4px;
+        color: #ffffff;
+    }
+    
+    .b_subitem{
+        display: flex;
+        position: absolute;
+        margin: 60px 0 0 135px;
+    }
+    
+    .b_arrow_item{
+        margin: 0 120px;
+    }
+    
+    /**footer**/
+    .footer{
+        width: 1280px;
+        height: 211px;
+    }
+    
+    .footer_s1{
+        display: flex;
+        height: 172px;
+        font-family: Microsoft Yahei;
+        font-size: 14px;
+        letter-spacing: 3px;
+        color: #ffffff;
+        background-color: #7091b9;
+    }
+    
+    .footer_date, .footer_custom{
+        display: flex;
+        margin-left: 188px;
+    }
+    
+    .footer_date_img{
+        width: 24px;
+        height: 39px;
+        margin-top: 30px;
+        margin-right: 8px;
+    }
+    
+    .footer_date_p{
+        margin-top: 37px;
+        margin-right: 110px;
+    }
+    
+    .footer_custom_img{
+        width: 20px;
+        height: 39px;
+        margin-top: 30px;
+        margin-right: 10px;
+    }
+    
+    .footer_custom_p{
+        margin-top: 32px;
+        margin-right: 110px;
+    }
+    
+    .f_c{
+        font-family: Microsoft Yahei, Arial;
+        font-size: 14px;
+        letter-spacing: 3px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+    
+    .footer_contect{
+        display: flex;
+        height: 130px;
+        border-left: 1px solid #ffffff;
+        padding-left: 100px;
+        margin-top: 28px;
+        margin-right: 30px;
+    }
+    
+    .footer_follow{
+        display: flex;
+        height: 130px;
+        margin-top: 28px;
+        margin-right: 70px;
+    }
+    
+    .contect, .follow{
+        font-family: Microsoft Yahei, Arial;
+        font-size: 16px;
+        letter-spacing: 3px;
+        color: #ffffff;
+        margin-right: 20px;
+    }
+    
+    .follow-item{
+        font-family: Microsoft Yahei, Arial;
+        font-size: 14px;
+        letter-spacing: 3px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+    
+    .top{
+        width: 81px;
+        height: 68px;
+        margin-top: 60px;
+    }
+    
+    .footer_s2{
+        display: flex;
+        height: 39px;
+        align-items: center;
+        justify-content: center;
+        background-color: #47607a;
+    }
+    
+    .footer_s2_p{
+        font-family: Microsoft Yahei;
+        font-size: 10px;
+        letter-spacing: 4px;
+        color: #ffffff;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
